@@ -1,0 +1,28 @@
+{
+  "jugadores": [
+    {
+      "nombre": "James Rodríguez",
+      "edad": 34,
+      "posicion": "Mediocampista",
+      "equipo": "Minnesota United"
+    },
+    {
+      "nombre": "Luis Díaz",
+      "edad": 29,
+      "posicion": "Delantero",
+      "equipo": "Bayern Munich"
+    },
+    {
+      "nombre": "Juan Fernando Quintero",
+      "edad": 33,
+      "posicion": "Mediocampista",
+      "equipo": "River Plate"
+    },
+    {
+      "nombre": "Davinson Sánchez",
+      "edad": 29,
+      "posicion": "Defensa",
+      "equipo": "Galatasaray"
+    }
+  ]
+}

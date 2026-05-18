@@ -206,17 +206,81 @@ app.listen(4000, () => {
         </div>
         </section>
 
-        
+        <section class="jason">
+            <div class="d-flex justify-content-center align-items-center">
+            <h2>package.json</h2>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div>
+                    <h2 class="">¿Qué es el package.json?</h1>
+                        <p>El archivo package.json es el archivo principal de configuración de un proyecto NodeJS. Contiene información del proyecto y las dependencias instaladas.</p>
+                        <h3>Información que contiene</h3>
+                        <ul>
+                            <li>Nombre del proyecto.</li>
+                            <li>Versión.</li>
+                            <li>Dependencias.</li>
+                            <li>Scripts.</li>
+                            <li>Autor.</li>
+                            <li>Licencia.</li>
+                        </ul>
+                        <h3>Funciones del package.json</h3>
+                        <ul>
+                            <li>Administrar dependencias.</li>
+                            <li>Ejecutar scripts.</li>
+                            <li>Configurar el proyecto.</li>
+                            <li>Compartir proyectos fácilmente.</li>
+                            
+                        </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2> Ejemplo</h2>
+                    <div class="container consola-js">
+                    <pre><code class="language-js">
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+                </code> 
+                    </div>
+                </div>
+                
+            </div>
+            <h3>Servidor en vivo para pruebas</h3>
+            <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-bash">
+    npx live-server
+                </code> </pre>
+                    </div>
+            <h2>Información</h2>
+            
+
+            <div id="resultado" class="row"></div>
+
+            
+            
+
+        </section>
     </body>
     <footer class="bg-dark text-white p-3">
         <ul>
             <li><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction">Developer.mozilla Express_Nodejs</a></li>
              <li><a href="https://docs.npmjs.com/cli/v10/commands/npm">docs.npmjs</a></li>
+             <li><a href="https://docs.npmjs.com/cli/v10/configuring-npm/package-json">package-json</a></li>
 
     
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/json.js"></script>
+    
 </body>
 </html>

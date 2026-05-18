@@ -3,9 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet"/>
+    <title>Node.js</title>
 </head>
 <body>
+    <header class="bg-primary text-white text-center fs-1 p-2">Tarea Node.js</header>
+    <body>
+        
+        <section class="Node">
+            <div class="d-flex justify-content-center align-items-center">
+            <h2>Node.js</h2>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div>
+                    <h2 class="">¿Qué es Node.js?</h1>
+                        <p>Node.js es un entorno de ejecución que permite ejecutar código JavaScript fuera del navegador. Fue creado para desarrollar aplicaciones del lado del servidor, como páginas web, APIs y sistemas en tiempo real.
+
+                            NodeJS utiliza el motor V8 de Google Chrome para ejecutar JavaScript de manera rápida y eficiente</p>
+                        <ul>
+                            <li>Crear servidores web.</li>
+                            <li> Desarrollar APIs REST.</li>
+                            <li>Aplicaciones en tiempo real como chats.</li>
+                            <li>Automatización de tareas.</li>
+                            <li>Manejo de bases de datos.</li>
+                        </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2> Ejemplo</h2>
+                    <div class="container consola-js">
+                    <pre><code class="language-js">
+const http = require('http');
+
+const servidor = http.createServer((req, res) => {
+res.write('Hola Mundo');
+res.end();
+});
+
+servidor.listen(3000);
+                </code> 
+                    </div>
+                </div>
+                
+            </div>
+            <ul>
+            <li><a href="http://localhost:3000" target="_blank">Prueba</a></li>
+            </ul>
+            
+
+        </section>
+
+
+        <section class="npm">
+            <div class="d-flex justify-content-center align-items-center">
+            <h2>Comando npm</h2>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div>
+                    <h2 class="">¿Qué es el comando npm?</h1>
+                        <p>npm significa “Node Package Manager”. Es el administrador de paquetes de NodeJS y sirve para instalar librerías, dependencias y herramientas para proyectos JavaScript.
+
+                        Con npm se pueden descargar paquetes creados por otros desarrolladores y también administrar las dependencias del proyecto.</p>
+                        <ul>
+                            <li>Instalación: Se hace mediante la terminal con el comando npm install nombre-del-paquete.</li>
+                            <li> Comunidad: Existen millones de paquetes gratuitos disponibles para ahorrarte tiempo.</li>
+                        
+                        </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2> Comandos básicos de npm</h2>
+                    <div class="container consola-js">
+                    <pre><code class="language-bash">
+npm init
+
+npm install express
+
+npm start
+
+npm uninstall nombre-paquete
+                </code> 
+                    </div>
+                </div>
+                
+            </div>
+           
+            
+
+        </section>
+
+        <section class="express">
+            <div class="d-flex justify-content-center align-items-center">
+            <h2>Express.js</h2>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div>
+                    <h2 class="">¿Qué es Express.js?</h1>
+                        <p>Express.js es un framework de NodeJS que facilita la creación de servidores y aplicaciones web. Ayuda a manejar rutas, peticiones HTTP y middleware de manera más sencilla.
+
+                        Express es uno de los frameworks más utilizados en NodeJS.</p>
+                        <h2>Características de Express</h2>
+                        <ul>
+                            <li>Manejo de rutas.</li>
+                            <li>Creación de APIs.</li>
+                            <li>Middleware.</li>
+                            <li>Manejo de peticiones y respuestas HTTP.</li>
+                            <li>Integración con bases de datos.</li>
+                        </ul>
+                        
+                </div>
+                
+                <div class="col-12 col-md-6">
+                    <h2> Ejemplo</h2>
+                    <div class="conteiner consola-js">
+                    <pre><code class="language-js">
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hola desde Express');
+});
+
+app.listen(3000, () => {
+    console.log('Servidor ejecutándose');
+});
+                </code> 
+                    </div>
+                </div>
+                
+            </div>
+            <ul>
+            <li><a href="http://localhost:4000" target="_blank">Prueba</a></li>
+            </ul>
+            
+
+        </section>
+
+
+
+<section class="usar express container">
+            <div class="d-flex justify-content-center align-items-center">
+            <h2>¿Cómo usar Express.js?</h2>
+            </div>
+            <div>
+            <h2> Crear una carpeta del proyecto</h2>
+                    <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-bash">
+    mkdir mi-proyecto
+                </code> </pre>
+                    </div>
+                
+
+                <h2> Entrar a la carpeta</h2>
+                    <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-bash">
+    cd mi-proyecto
+                </code> </pre>
+                    </div>
+                
+
+                <h2> Inicializar npm</h2>
+                    <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-bash">
+    npm init -y
+                </code> </pre>
+                    </div>
+                
+
+
+            <h2> Installar express</h2>
+                    <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-bash">
+    npm install express
+                </code> </pre>
+                    </div>
+                
+
+
+                <h2> Crear un archivo index.js</h2>
+            
+                    <div class="container consola-js">
+                    <pre class="m-0 p-0"><code class="language-js">
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hola desde Express');
+});
+
+app.listen(4000, () => {
+    console.log('Servidor ejecutándos http://localhost:4000');
+});
+                </code> </pre>
+                    </div>
+                
+               <h2> Ejecutar el proyecto</h2>
+                    <div class="container consola-js">
+        <pre class="m-0 p-0"><code class="language-bash">
+        node index.js
+        </code></pre>
+        </div>
+        </section>
+
+        
+    </body>
+    <footer class="bg-dark text-white p-3">
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction">Developer.mozilla Express_Nodejs</a></li>
+             <li><a href="https://docs.npmjs.com/cli/v10/commands/npm">docs.npmjs</a></li>
+
     
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
 </body>
 </html>
